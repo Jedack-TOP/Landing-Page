@@ -36,10 +36,13 @@ header {
 
 .secondary,
 a:link {
-    font-size: 18px;
-    color: #E5E7EB;
+    font-size: 24px;
     text-decoration: none;
+    color: gray;
 }
+
+a, a:active, a:visited { color: white; }
+a:hover { color: green; }
 
 /* WELCOME */
 .welcome {
@@ -71,6 +74,79 @@ a:link {
     background-color: #1f2937;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 215px;
+}
+
+/* CARD SECTION */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 13em;
+    margin-top: 3em;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em 0 6em 0;
+}
+
+.card {
+    text-align: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+/* QUOTE */
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 7em 13em;
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+.quote em {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+/* SIGN UP */
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f2937;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
 }
